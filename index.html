@@ -53,7 +53,7 @@ table tt {
 
 <p>Dies ist eine <strong>inoffizielle Dokumentation</strong> für eine API zu den Fahrplan- und Echtzeitdaten der Wiener Linien. Diese API läuft über die Server von fluidtime und wird von den qando-Applikationen genutzt. Für diese API ist keine Lizenz bekannt, auch ist unbekannt, ob diese oder eine ähnliche API im Rahmen von <a href="http://www.data.wien.gv.at/">Open Government Data Wien (OGD)</a> jemals veröffentlicht wird.</p>
 
-<p>Mittels der <a href="explorer.php">explorer.php</a> kann man recht leicht die API testen. Per Kommandozeile kann man mittels <tt>curl -d &lt;xml-daten&gt; http://webservice.qando.at/2.0/webservice.ft</tt> die API ansprechen. (Unter OS X kann man noch ein <tt>| xmllint --format -</tt> zur besseren Übersicht anhängen).</p>
+<p>Mittels der <a href="https://github.com/akirk/Wiener-Linien-API/raw/master/explorer.php">explorer.php</a> kann man recht leicht die API testen. Per Kommandozeile kann man mittels <tt>curl -d &lt;xml-daten&gt; http://webservice.qando.at/2.0/webservice.ft</tt> die API ansprechen. (Unter OS X kann man noch ein <tt>| xmllint --format -</tt> zur besseren Übersicht anhängen).</p>
 
 <h4>Historisches</h4>
 <p>Ursprünglich war diese API eine REST-API, seit Version 2.0 (=Version 3.0 der qando Clients) wird im Request ein XML-Dokument geschickt und ein XML-Dokument wird auch wieder empfangen.</p>
@@ -657,7 +657,7 @@ table tt {
 </pre>
 
 <h3 id="api_get_route">api_get_route</h3>
-<p><a href="#top">Zum Inhalt</a></p>
+<p><a href="#top">&uarr; Zum Inhalt</a></p>
 <p>Anfrage nach einer Route zwischen <tt>from</tt> und <tt>to</tt>.</p>
 <h4>Beispiel-Anfrage</h4>
 <pre><font color="#0000FF">&lt;<font color="#0000FF">?xml <font color="#800000">version</font><font color="#0000FF">=</font><font color="#FF00FF">&quot;1.0&quot;</font> <font color="#800000">encoding</font><font color="#0000FF">=</font><font color="#FF00FF">&quot;UTF-8&quot;</font>?</font>&gt;</font> 
